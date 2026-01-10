@@ -1,57 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NURO MD MINI</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NURO MD MINI • Next-Gen WhatsApp Bot</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="bg-nuro-dark text-white min-h-screen overflow-x-hidden relative font-inter">
 
-<!-- PRELOADER -->
-<div class="preloader" id="preloader">
-  <div class="spinner"></div>
-</div>
+  <!-- Background Grid -->
+  <div class="bg-grid"></div>
 
-<!-- MAIN CONTENT -->
-<div class="container" id="mainContent">
-  <div class="dev">DEVELOPED BY NURO</div>
-  <h1>NURO'S WEB...!</h1>
-  <div class="subtitle">
-    The Next Generation WhatsApp Bot Experience.<br>
-    Fast. Secure. Powerful.
+  <!-- Preloader -->
+  <div id="preloader" class="preloader">
+    <div class="loader"></div>
   </div>
 
-  <a href="https://nuro-blue-setc-8e6b91523a41.herokuapp.com/" target="_blank" class="btn deploy">
-    NURO MD MINI BOT
-  </a>
+  <!-- Hamburger Menu -->
+  <button id="menuBtn" class="menu-btn">
+    <span></span><span></span><span></span>
+  </button>
 
-  <a class="btn web-services" id="webBtn">NURO MD WEB SERVICES</a>
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-content">
+      <div class="sidebar-logo">NURO<span>MD</span></div>
+      <nav class="sidebar-nav">
+        <a href="#" id="menu-dashboard">Dashboard</a>
+        <a href="https://downloader-web-flame.vercel.app/" target="_blank" id="menu-webservices">Web Services</a>
+        <a href="https://wa.me/94721017862" target="_blank" id="menu-contact">Contact Us</a>
+        <a href="https://whatsapp.com/channel/0029Vb6d1x73bbVBh3ibyx02" target="_blank" id="menu-joinchannel">Join Channel</a>
+        <a href="https://chat.whatsapp.com/LmSy1M1ttMe5CMSEGEtGUm" target="_blank" id="menu-joingroup">Join Group</a>
+      </nav>
+      <div class="sidebar-footer">DEVELOPED BY NURO</div>
+    </div>
+  </aside>
 
-  <div class="join-buttons">
-    <a href="https://whatsapp.com/channel/0029Vb6d1x73bbVBh3ibyx02" class="btn join-btn">JOIN CHANNEL</a>
-    <a href="https://chat.whatsapp.com/LmSy1M1ttMe5CMSEGEtGUm" class="btn join-btn">JOIN NURO MD SUPPORT</a>
-  </div>
+  <!-- Main Content -->
+  <main id="mainContent" class="main-content">
+    <h1 id="main-title">NURO MD MINI</h1>
+    <p id="main-subtitle">
+      The Next Generation WhatsApp Bot Experience.<br>
+      <span class="highlight">Lightning Fast</span> • <span class="highlight">Military Grade Secure</span> • <span class="highlight">Limitless Power</span>
+    </p>
 
-  <div class="cards">
-    <div class="card"><div class="icon">⚡</div><p>Super Fast<br>Response</p></div>
-    <div class="card"><div class="icon">🚀</div><p>Easy to<br>Deploy</p></div>
-  </div>
+    <div class="btn-group">
+      <a href="https://nuro-blue-setc-8e6b91523a41.herokuapp.com/" target="_blank" id="btn-deploy-bot"><span>DEPLOY NURO MD MINI BOT</span></a>
+      <a href="https://downloader-web-flame.vercel.app/" target="_blank" id="btn-webservice"><span>NURO MD WEB SERVICE</span></a>
+      <a href="https://whatsapp.com/channel/0029Vb6d1x73bbVBh3ibyx02" target="_blank" id="btn-channel">JOIN OFFICIAL CHANNEL</a>
+    </div>
 
-  <div class="note">Click "NURO MD MINI BOT" to create your bot instantly</div>
-  <div class="footer">© 2026 Powered by NURO MD</div>
-</div>
+    <div class="feature-cards">
+      <div class="feature-card"><div>⚡</div><h3>Blazing Speed</h3><p>Under 800ms average response time</p></div>
+      <div class="feature-card"><div>🛡️</div><h3>End-to-End Secure</h3><p>Encrypted sessions • Zero data logging</p></div>
+      <div class="feature-card"><div>✨</div><h3>Limitless Features</h3><p>Plugins • AI • Automation & more</p></div>
+    </div>
 
-<!-- POPUP -->
-<div id="popup">
-  <div id="popup-content">
-    <button class="close-btn" id="closePopup">×</button>
-    <h2>COMING SOON</h2>
-    <p>NURO MD WEB SERVICES are under development.<br>Stay tuned for updates!</p>
-  </div>
-</div>
+    <footer id="main-footer">© 2026 NURO MD • Built for the Future</footer>
+  </main>
 
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
