@@ -133,24 +133,52 @@ body::before{
 }
 .container.visible{opacity:1}
 
-/* LOGO IMAGE */
-.logo-img-wrapper{
+/* LOGO TITLE WRAPPER */
+.logo-title-wrapper{
   text-align:center;
   margin-bottom:20px;
 }
+
+/* LOGO TITLE */
+.logo-title{
+  font-family:'Orbitron',sans-serif;
+  font-size:clamp(24px,5vw,36px);
+  color:#00f2ff;
+  letter-spacing:2px;
+  margin-bottom:12px;
+  text-shadow:0 0 20px rgba(0,242,255,.6);
+}
+
+/* LOGO IMAGE */
+.logo-img-wrapper{
+  display:flex;
+  justify-content:center;
+}
+
 .logo-img{
-  width:auto;
-  max-width:150px;
+  width:100%;
+  max-width:1280px; /* PC max size */
+  height:auto;
+  max-height:720px; /* PC max height */
   border-radius:10px;
   box-shadow: 0 0 10px #00f2ff, 0 0 60px #00f2ff, 0 0 44px #00f2ff;
   animation: aurora 3s ease-in-out infinite alternate;
 }
-@keyframes aurora{
-  0%{box-shadow:0 0 10px #00f2ff,0 0 20px #00f2ff,0 0 60px #00f2ff;}
-  50%{box-shadow:0 0 20px #00f2ff,0 0 50px #00f2ff,0 0 800px #00f2ff;}
-  100%{box-shadow:0 0 10px #00f2ff,0 0 20px #00f2ff,0 0 600px #00f2ff;}
+
+/* RESPONSIVE FOR MOBILE */
+@media (max-width:768px){
+  .logo-img{
+    max-width:90%;
+    max-height:400px;
+  }
 }
 
+/* Aurora animation */
+@keyframes aurora{
+  0%{box-shadow:0 0 10px #00f2ff,0 0 20px #00f2ff,0 0 60px #00f2ff;}
+  50%{box-shadow:0 0 20px #00f2ff,0 0 50px #00f2ff,0 0 80px #00f2ff;}
+  100%{box-shadow:0 0 10px #00f2ff,0 0 20px #00f2ff,0 0 60px #00f2ff;}
+}
 /* TITLE */
 h1{
   font-family:'Orbitron',sans-serif;
