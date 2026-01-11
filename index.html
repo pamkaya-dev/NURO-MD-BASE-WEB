@@ -1,70 +1,96 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NURO MD MINI • Next-Gen WhatsApp Bot</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NURO MD MINI • Next-Gen WhatsApp Bot</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      fontFamily: {
+        orbitron: ['Orbitron', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
+      },
+      colors: {
+        'nuro-cyan': '#00f2ff',
+        'nuro-dark': '#050b16',
+        'nuro-darker': '#0b1220',
+        'nuro-glass': 'rgba(11,18,32,0.45)',
+      },
+      boxShadow: {
+        'neon-cyan': '0 0 35px rgba(0,242,255,.45), 0 0 65px rgba(0,242,255,.25)',
+        'neon-cyan-intense': '0 0 55px rgba(0,242,255,.7)',
+      }
+    }
+  }
+}
+</script>
+
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-nuro-dark text-white min-h-screen font-inter">
 
-  <!-- Background Grid -->
-  <div class="bg-grid"></div>
+<body class="bg-nuro-dark text-white min-h-screen overflow-x-hidden font-inter">
 
-  <!-- Preloader -->
-  <div id="preloader" class="preloader">
-    <div class="loader"></div>
+<!-- Background Grid -->
+<div class="bg-grid"></div>
+
+<!-- Preloader -->
+<div id="preloader" class="preloader">
+  <div class="loader"></div>
+</div>
+
+<!-- Menu Button -->
+<button id="menuBtn" class="menu-btn">
+  <span></span><span></span><span></span>
+</button>
+
+<!-- Sidebar -->
+<aside id="sidebar" class="sidebar">
+  <div class="p-8">
+    <div class="logo">NURO<span>MD</span></div>
+
+    <nav class="space-y-3">
+      <a>Dashboard</a>
+      <a href="https://downloader-web-flame.vercel.app/" target="_blank">Web Services</a>
+      <a href="https://wa.me/94721017862" target="_blank">Contact Us</a>
+      <a href="https://whatsapp.com/channel/0029Vb6d1x73bbVBh3ibyx02" target="_blank">Join Channel</a>
+      <a href="https://chat.whatsapp.com/LmSy1M1ttMe5CMSEGEtGUm" target="_blank">Join Group</a>
+    </nav>
+
+    <div class="dev">DEVELOPED BY NURO</div>
   </div>
+</aside>
 
-  <!-- Hamburger Menu -->
-  <button id="menuBtn" class="menu-btn">
-    <span></span><span></span><span></span>
-  </button>
+<!-- Main -->
+<main id="content" class="main">
 
-  <!-- Sidebar -->
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-content">
-      <div class="sidebar-logo">NURO<span>MD</span></div>
-      <nav class="sidebar-nav">
-        <a href="#" id="menu-dashboard">Dashboard</a>
-        <a href="https://downloader-web-flame.vercel.app/" target="_blank" id="menu-webservices">Web Services</a>
-        <a href="https://wa.me/94721017862" target="_blank" id="menu-contact">Contact Us</a>
-        <a href="https://whatsapp.com/channel/0029Vb6d1x73bbVBh3ibyx02" target="_blank" id="menu-joinchannel">Join Channel</a>
-        <a href="https://chat.whatsapp.com/LmSy1M1ttMe5CMSEGEtGUm" target="_blank" id="menu-joingroup">Join Group</a>
-      </nav>
-      <div class="sidebar-footer">DEVELOPED BY NURO</div>
-    </div>
-  </aside>
+<h1 class="title">NURO MD MINI</h1>
 
-  <!-- Main Content -->
-  <main id="mainContent" class="main-content">
-    <h1 id="main-title">NURO MD MINI</h1>
-    <p id="main-subtitle">
-      The Next Generation WhatsApp Bot Experience.<br>
-      <span class="highlight">Lightning Fast</span> • <span class="highlight">Military Grade Secure</span> • <span class="highlight">Limitless Power</span>
-    </p>
+<p class="subtitle">
+The Next Generation WhatsApp Bot Experience.<br>
+<span>Lightning Fast</span> • <span>Military Grade Secure</span> • <span>Limitless Power</span>
+</p>
 
-    <div class="btn-group">
-      <a href="https://nuro-blue-setc-8e6b91523a41.herokuapp.com/" target="_blank" id="btn-deploy-bot"><span>DEPLOY NURO MD MINI BOT</span></a>
-      <a href="https://downloader-web-flame.vercel.app/" target="_blank" id="btn-webservice"><span>NURO MD WEB SERVICE</span></a>
-      <a href="https://whatsapp.com/channel/0029Vb6d1x73bbVBh3ibyx02" target="_blank" id="btn-channel">JOIN OFFICIAL CHANNEL</a>
-    </div>
+<div class="actions">
+  <a href="https://nuro-blue-setc-8e6b91523a41.herokuapp.com/" target="_blank" class="btn neon">
+    DEPLOY NURO MD MINI BOT
+  </a>
+  <a href="https://downloader-web-flame.vercel.app/" target="_blank" class="btn neon">
+    NURO MD WEB SERVICE
+  </a>
+</div>
 
-    <div class="feature-cards">
-      <div class="feature-card"><div>⚡</div><h3>Blazing Speed</h3><p>Under 800ms average response time</p></div>
-      <div class="feature-card"><div>🛡️</div><h3>End-to-End Secure</h3><p>Encrypted sessions • Zero data logging</p></div>
-      <div class="feature-card"><div>✨</div><h3>Limitless Features</h3><p>Plugins • AI • Automation & more</p></div>
-    </div>
+<footer>© 2026 NURO MD • Built for the Future</footer>
+</main>
 
-    <footer id="main-footer">© 2026 NURO MD • Built for the Future</footer>
-  </main>
-
-  <script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
-</html
+</html>
