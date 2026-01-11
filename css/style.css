@@ -142,13 +142,13 @@ body::before{
   width:auto;
   max-width:150px;
   border-radius:10px;
-  box-shadow: 0 0 30px #00f2ff, 0 0 60px #00f2ff, 0 0 90px #00f2ff;
+  box-shadow: 0 0 10px #00f2ff, 0 0 60px #00f2ff, 0 0 44px #00f2ff;
   animation: aurora 3s ease-in-out infinite alternate;
 }
 @keyframes aurora{
-  0%{box-shadow:0 0 30px #00f2ff,0 0 60px #00f2ff,0 0 90px #00f2ff;}
-  50%{box-shadow:0 0 50px #00f2ff,0 0 80px #00f2ff,0 0 120px #00f2ff;}
-  100%{box-shadow:0 0 30px #00f2ff,0 0 60px #00f2ff,0 0 90px #00f2ff;}
+  0%{box-shadow:0 0 10px #00f2ff,0 0 20px #00f2ff,0 0 60px #00f2ff;}
+  50%{box-shadow:0 0 20px #00f2ff,0 0 50px #00f2ff,0 0 800px #00f2ff;}
+  100%{box-shadow:0 0 10px #00f2ff,0 0 20px #00f2ff,0 0 600px #00f2ff;}
 }
 
 /* TITLE */
