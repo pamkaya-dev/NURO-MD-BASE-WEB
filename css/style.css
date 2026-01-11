@@ -154,7 +154,7 @@ animation: aurora 3s ease-in-out infinite alternate;
 /* TITLE */
 h1{
 font-family:'Orbitron',sans-serif;
-font-size:clamp(64px,6vw,46px);
+font-size:clamp(44px,8vw,50px);
 background:linear-gradient(180deg,#fff,#7cdfff,#00f2ff);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
