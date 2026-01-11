@@ -133,43 +133,58 @@ body::before{
 }
 .container.visible{opacity:1}
 
-/* LOGO TITLE WRAPPER */
-.logo-title-wrapper{
+/* LOGO SECTION */
+.logo-section{
   text-align:center;
-  margin-bottom:20px;
+  margin-bottom:40px; /* Section bottom spacing */
 }
 
-/* LOGO TITLE */
+/* TITLE */
 .logo-title{
   font-family:'Orbitron',sans-serif;
-  font-size:clamp(24px,5vw,36px);
-  color:#00f2ff;
-  letter-spacing:2px;
-  margin-bottom:12px;
-  text-shadow:0 0 20px rgba(0,242,255,.6);
+  font-size:clamp(36px,6vw,64px); /* Logoට අනුව size scale */
+  background:linear-gradient(180deg,#fff,#7cdfff,#00f2ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-shadow:0 0 30px rgba(0,242,255,.5);
+  margin-bottom:20px; /* Title + Logo spacing */
 }
 
 /* LOGO IMAGE */
 .logo-img-wrapper{
   display:flex;
   justify-content:center;
+  margin-bottom:25px; /* Logo + Button spacing */
 }
 
 .logo-img{
   width:100%;
-  max-width:1280px; /* PC max size */
+  max-width:1280px;
   height:auto;
-  max-height:720px; /* PC max height */
+  max-height:720px;
   border-radius:10px;
   box-shadow: 0 0 10px #00f2ff, 0 0 60px #00f2ff, 0 0 44px #00f2ff;
   animation: aurora 3s ease-in-out infinite alternate;
 }
 
-/* RESPONSIVE FOR MOBILE */
+/* BUTTON */
+.btn.join-btn{
+  max-width:200px;
+  margin:0 auto;
+  display:block;
+}
+
+/* RESPONSIVE */
 @media (max-width:768px){
+  .logo-title{
+    font-size:clamp(28px,8vw,42px);
+  }
   .logo-img{
     max-width:90%;
     max-height:400px;
+  }
+  .btn.join-btn{
+    width:80%;
   }
 }
 
@@ -182,7 +197,7 @@ body::before{
 /* TITLE */
 h1{
   font-family:'Orbitron',sans-serif;
-  font-size:clamp(34px,6vw,46px);
+  font-size:clamp(64px,12vw,46px);
   background:linear-gradient(180deg,#fff,#7cdfff,#00f2ff);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
