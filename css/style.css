@@ -141,7 +141,7 @@ body::before{
 .logo-img{
   width:auto;
   max-width:150px;
-  border-radius:50%;
+  border-radius:10px;
   box-shadow: 0 0 30px #00f2ff, 0 0 60px #00f2ff, 0 0 90px #00f2ff;
   animation: aurora 3s ease-in-out infinite alternate;
 }
